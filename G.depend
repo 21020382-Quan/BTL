@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1651761547 source:c:\sdl\g\tetris.cpp
+	<iostream>
+	"Tetris.h"
+
+1651761547 c:\sdl\g\tetris.h
+	<SDL.h>
+	<SDL_image.h>
+	<string>
+
+1652784011 source:c:\sdl\game\main.cpp
+	"tetris.h"
+	<iostream>
+	<ctime>
+	"graphic.h"
+
+1652800687 c:\sdl\game\tetris.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<string>
+	<typeinfo>
+	<iostream>
+
+1652800902 source:c:\sdl\game\tetris.cpp
+	<iostream>
+	"tetris.h"
+
+1651950709 source:c:\sdl\game\textobject.cpp
+	"TextObject.h"
+	<iostream>
+
+1651950694 c:\sdl\game\textobject.h
+	"CommonFunc.h"
+	"BaseObject.h"
+	<SDL_ttf.h>
+	<string>
+
+1651930922 source:c:\sdl\game\commonfunc.cpp
+
+1652055650 source:c:\sdl\game\baseobject.cpp
+	"BaseObject.hpp"
+	<iostream>
+
+1651950577 c:\sdl\game\baseobject.h
+	<SDL.h>
+	"CommonFunc.h"
+
+1652056060 c:\sdl\game\commonfunc.h
+	<Windows.h>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1652023817 c:\sdl\game\baseobject.hpp
+	"CommonFunc.h"
+
+1652055868 source:c:\sdl\game\text_object.cpp
+	"Text_object.hpp"
+	<iostream>
+
+1652058862 c:\sdl\game\text_object.hpp
+	<SDL_ttf.h>
+	<string>
+
+1652772115 source:c:\sdl\game\menu.cpp
+
+1652664626 source:c:\sdl\game\gameplay.cpp
+
+1652800977 source:c:\sdl\game\graphic.cpp
+	"graphic.h"
+	<iostream>
+
+1652799157 c:\sdl\game\graphic.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	"tetris.h"
+
