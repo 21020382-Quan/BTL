@@ -31,6 +31,7 @@ public:
 	{
 		return running;
 	}
+	bool quit = false;
 
 	bool isvalid();
 
@@ -88,14 +89,14 @@ public:
 
 	int countHold = 0;
 	int color = 1;
-	int score = 0;
 	int dx = 0;
     int doMove = 1;
-    int lev = 1;
+    int lev = 0, score = 0;
 	bool rotate = false;
 	unsigned int delay = 300;
 	Uint32 startTime = 0, currentTime = 0;
-	bool write = true, enough = false;
+	bool write = true;
+
 };
 
 

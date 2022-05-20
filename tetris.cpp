@@ -123,6 +123,7 @@ void Tetris::handleEvents()
 		{
 		case SDL_QUIT:
 			running = false;
+			quit = true;
 			break;
 		case SDL_KEYDOWN:
 			switch (e.key.keysym.sym)
@@ -155,7 +156,7 @@ void Tetris::handleEvents()
 		delay = 40;
     else if (state[SDL_SCANCODE_SPACE])
         delay = 3.5;
-    else delay = lev;
+    else delay = 500 - lev * 20;
 }
 
 bool Tetris::isvalid()
@@ -226,8 +227,7 @@ void Tetris::tick()
 
 void Tetris::level()
 {
-    lev = 600 - (score/10) * 35;
-    if (lev <= 100) lev = 100;
+    lev = score / 100;
 }
 
 void Tetris::checkLines()

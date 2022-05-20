@@ -36,6 +36,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="menu.h" />
+		<Unit filename="replay.cpp" />
+		<Unit filename="replay.h" />
 		<Unit filename="tetris.cpp" />
 		<Unit filename="tetris.h" />
 		<Extensions />

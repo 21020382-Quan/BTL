@@ -16,16 +16,15 @@ private:
 	enum { Lines = 20, Cols = 10 };
     SDL_Window* window = NULL;
 	SDL_Renderer* render = NULL;
-	SDL_Texture* background = NULL, * blocks = NULL, * tScore = NULL, * tLevel = NULL;
+	SDL_Texture* background = NULL, * blocks = NULL, * tScore = NULL, * tLevel = NULL, * tHigh = NULL;
 	SDL_Surface* surface = NULL;
 	SDL_Rect srcR = { 0, 0, BlockW, BlockH }, destR = { 0, 0, BlockW, BlockH }, srcNextR= { 0, 0, BlockW, BlockH }, desNextR= { 0, 0, BlockW, BlockH },
              srcScoreR = {0, 0, 0, 0}, desScoreR = {0, 0, 0, 0}, srcLevelR = {0, 0, 0, 0}, desLevelR = {0, 0, 0, 0};
-    TTF_Font *font, *lv = NULL;
+    TTF_Font *font = NULL;
     SDL_Color fg = {255, 255, 255};
 
     Tetris tetris_;
     bool write = true;
-
     bool running = false;
 
 public:
@@ -34,6 +33,10 @@ public:
     }
     ~Graphic()
     {
+    }
+    bool cfquit()
+    {
+        return tetris_.quit;
     }
     bool init(const char* title);
     void updateRender();

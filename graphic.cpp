@@ -35,7 +35,6 @@ bool Graphic::init(const char* title)
 		return false;
     if (TTF_Init() < 0) return false;
     font = TTF_OpenFont("VeraMoBd.ttf", 18);
-    lv = TTF_OpenFont("VeraMoBd.ttf", 18);
 	running = true;
 	tetris_.running = true;
 	return true;
@@ -46,7 +45,7 @@ void Graphic::play()
     tetris_.setCurrentTime(SDL_GetTicks());
     tetris_.handleEvents();
     tetris_.gameplay();
-    if(tetris_.write == false) textScore();
+    if(tetris_.write == false) {textScore();textLevel();}
     updateRender();
 }
 
@@ -122,8 +121,8 @@ void Graphic::updateRender()
 void Graphic::textLevel()
 {
     string text = to_string(tetris_.lev);
-    tLevel = SDL_CreateTextureFromSurface(render, TTF_RenderText_Solid(lv, text.c_str(), fg));
-    TTF_SizeText(lv, text.c_str(), &srcLevelR.w, &srcLevelR.h);
+    tLevel = SDL_CreateTextureFromSurface(render, TTF_RenderText_Solid(font, text.c_str(), fg));
+    TTF_SizeText(font, text.c_str(), &srcLevelR.w, &srcLevelR.h);
     srcLevelR.x = 0;
     srcLevelR.y = 0;
 
@@ -138,8 +137,6 @@ void Graphic::clean()
 {
 	SDL_DestroyTexture(blocks);
 	SDL_DestroyTexture(background);
-	SDL_DestroyTexture(tScore);
-	SDL_DestroyTexture(tLevel);
 	SDL_DestroyWindow(window);
 	SDL_DestroyRenderer(render);
 	TTF_Quit();

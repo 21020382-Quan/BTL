@@ -8,13 +8,15 @@
 	<SDL_image.h>
 	<string>
 
-1652784011 source:c:\sdl\game\main.cpp
+1653060312 source:c:\sdl\game\main.cpp
 	"tetris.h"
 	<iostream>
 	<ctime>
 	"graphic.h"
+	"menu.h"
+	"replay.h"
 
-1652800687 c:\sdl\game\tetris.h
+1653059173 c:\sdl\game\tetris.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -22,7 +24,7 @@
 	<typeinfo>
 	<iostream>
 
-1652800902 source:c:\sdl\game\tetris.cpp
+1653060312 source:c:\sdl\game\tetris.cpp
 	<iostream>
 	"tetris.h"
 
@@ -64,17 +66,36 @@
 	<SDL_ttf.h>
 	<string>
 
-1652772115 source:c:\sdl\game\menu.cpp
+1653035469 source:c:\sdl\game\menu.cpp
+	"menu.h"
 
 1652664626 source:c:\sdl\game\gameplay.cpp
 
-1652800977 source:c:\sdl\game\graphic.cpp
+1653059270 source:c:\sdl\game\graphic.cpp
 	"graphic.h"
 	<iostream>
 
-1652799157 c:\sdl\game\graphic.h
+1653059200 c:\sdl\game\graphic.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
+	"tetris.h"
+
+1653006305 c:\sdl\game\menu.h
+	<iostream>
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_image.h>
+	<string>
+
+1653060312 source:c:\sdl\game\replay.cpp
+	"replay.h"
+
+1653060678 c:\sdl\game\replay.h
+	<iostream>
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_image.h>
+	<string>
 	"tetris.h"
 
